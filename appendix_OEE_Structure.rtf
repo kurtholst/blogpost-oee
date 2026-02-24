@@ -1,0 +1,324 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww37860\viewh19300\viewkind0
+\deftab720
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 spark.sql("""
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 CREATE TABLE vdm_classic_aerfvt_catalog.blogpost_oee.oee_data (
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0site STRING,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0country STRING,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0line_type STRING,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0output_good STRING,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0rescueddata STRING,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0noise_offset DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0ideal_cycle_time_hours DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0units_per_cycle DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0id STRING,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0t STRING,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0date DATE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0planned_time_hours DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0unplanned_downtime_hours DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0actual_operating_time_hours DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0ideal_cycle_time_unit STRING,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0max_possible_units DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0performance_factor DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0total_units DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0defect_rate DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0defective_units DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0availability DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0performance DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0quality DOUBLE,
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 \'a0oee DOUBLE
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 )
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 """)
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 Column\uc0\u8209 by\u8209 column description:
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 site:\uc0\u8232 Manufacturing site name (e.g. plant or factory location such as \'93Jiaxing\'94).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 country:\uc0\u8232 Country where the site is located (e.g. \'93China\'94).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 line_type:\uc0\u8232 High\u8209 level production line family or technology (e.g. \'93Molding lines\'94).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 output_good:\uc0\u8232 Primary product, product type or family produced on the line (e.g. \'93Icons\'94).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 rescueddata:\uc0\u8232 Internal helper/index field, appears to be an integer sequence used during data generation or cleaning; not a physical measurement.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 noise_offset:\uc0\u8232 Numeric factor around 1.0 used to introduce controlled variation (noise) in the synthetic data; not a real process parameter.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 ideal_cycle_time_hours:\uc0\u8232 Theoretical cycle time per cycle in hours, used as the basis for performance calculations (e.g. 12 hours per cycle in this dataset).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 units_per_cycle:\uc0\u8232 Planned number of units produced in one ideal cycle (e.g. 510 units per cycle).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 id:\uc0\u8232 Row or observation identifier, an integer index for each record over time.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 t:\uc0\u8232 Relative time index in (fractional) days from a reference point, increasing gradually across records.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 date:\uc0\u8232 Calendar date associated with the observation (production day), in ISO format (YYYY\u8209 MM\u8209 DD).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 planned_time_hours:\uc0\u8232 Planned production time for the period in hours (e.g. 16 hours per day).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 unplanned_downtime_hours:\uc0\u8232 Measured unplanned downtime in hours during the planned time (breakdowns, stops, etc.).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 actual_operating_time_hours:\uc0\u8232 Actual time the equipment was running (producing) in hours; this is planned time - unplanned downtime adjusted by noise.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 ideal_cycle_time_unit:\uc0\u8232 Ideal cycle time per unit in hours, i.e. theoretical time to produce one good unit.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 max_possible_units:\uc0\u8232 Maximum units that could be produced at ideal speed during the actual operating time, i.e.actual operating time / ideal cycle time per unit.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 performance_factor:\uc0\u8232 Ratio capturing how actual output compares to the maximum possible units (raw performance before quality losses).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 total_units:\uc0\u8232 Total units produced (good + defective) during the period.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 defect_rate:\uc0\u8232 Proportion of produced units that are defective, expressed as a decimal (e.g. 0.02 = 2% scrap).
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 defective_units:\uc0\u8232 Count of defective units for the period; equals total units x defect rate.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 availability:\uc0\u8232 Availability component of OEE: , after downtime losses.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 performance:\uc0\u8232 Performance component of OEE: how fast the line ran relative to the ideal speed, typically total units x ideal cycle time per unit / actual operating time.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 quality:\uc0\u8232 Quality component of OEE: share of good units, 1 - defect rate.
+\f1\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\li960\fi-960\partightenfactor0
+
+\f0\fs29\fsmilli14667 \cf0 oee:\uc0\u8232 Overall Equipment Effectiveness for the period, calculated as availability x performance x quality.
+\f1\fs24 \
+}
